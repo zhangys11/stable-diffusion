@@ -1,4 +1,24 @@
 # Stable Diffusion
+
+This is how I run the stable diffusion on my own machine:  
+
+```
+Install NVidia CUDA 11.7  
+
+pip install torch==1.8.2 torchvision==0.9.2 torchaudio===0.8.2 --extra-index-url https://download.pytorch.org/whl/lts/1.8/cu111  
+
+pip install transformers scipy ftfy huggingface_hub diffusers omegaconf invisible-watermark einops pytorch_lightning==1.3 torchmetrics==0.7 taming-transformers-rom1504 kornia  
+
+pip install git+https://github.com/openai/CLIP.git  
+
+huggingface-cli login  
+
+python scripts/txt2img.py --prompt "a close-up portrait of a cat by pablo picasso, vivid, abstract art, colorful, vibrant" --plms --n_iter 5 --n_samples 1 --H 320 --W 320  
+
+```
+
+<hr/>
+
 *Stable Diffusion was made possible thanks to a collaboration with [Stability AI](https://stability.ai/) and [Runway](https://runwayml.com/) and builds upon our previous work:*
 
 [**High-Resolution Image Synthesis with Latent Diffusion Models**](https://ommer-lab.com/research/latent-diffusion-models/)<br/>
