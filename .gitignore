@@ -1,4 +1,4 @@
 
 models/ldm/stable-diffusion-v1/model.ckpt
 *.pyc
-outputs/txt2img-samples/samples/
+outputs/txt2img-samples/
