@@ -17,6 +17,13 @@ python scripts/txt2img.py --prompt "a close-up portrait of a cat by pablo picass
 
 ```
 
+I also incorporated the GUI from https://github.com/ahrm/UnstableFusion   
+
+```
+python scripts/gui/run.py  
+```
+<img src='scripts/gui/gui.png'>
+
 <hr/>
 
 *Stable Diffusion was made possible thanks to a collaboration with [Stability AI](https://stability.ai/) and [Runway](https://runwayml.com/) and builds upon our previous work:*

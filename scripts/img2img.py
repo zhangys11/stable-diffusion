@@ -242,7 +242,7 @@ def main():
 
     precision_scope = autocast if opt.precision == "autocast" else nullcontext
     with torch.no_grad():
-        with precision_scope("cuda"):
+        with precision_scope(True) # ("cuda"):
             with model.ema_scope():
                 tic = time.time()
                 all_samples = list()
